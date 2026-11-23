@@ -1,0 +1,6 @@
+
+dist-newstyle
+.git
+.vscode
+*.hi
+*.o

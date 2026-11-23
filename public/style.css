@@ -1,0 +1,333 @@
+
+/* CONFIGURAÇÕES GERAIS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fff2e8;
+    color: #392323;
+    line-height: 1.7;
+}
+
+/* CABEÇALHO */
+.cabecalho {
+    background: linear-gradient(135deg, #a90032, #d83c65);
+    color: white;
+    text-align: center;
+    padding: 45px 20px 30px;
+    border-bottom: 6px solid #f5a2ad;
+}
+
+.logo {
+    font-size: 35px;
+    margin-bottom: 5px;
+}
+
+.cabecalho h1 {
+    font-size: 42px;
+    margin-bottom: 5px;
+}
+
+.cabecalho p {
+    font-size: 16px;
+    margin-bottom: 25px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 9px 17px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 25px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background-color: white;
+    color: #a90032;
+}
+
+/* CONTEÚDO PRINCIPAL */
+main {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.introducao {
+    text-align: center;
+    padding: 65px 20px;
+    max-width: 850px;
+    margin: auto;
+}
+
+.introducao h2 {
+    color: #a90032;
+    font-size: 32px;
+    margin-bottom: 18px;
+}
+
+.introducao p {
+    margin-bottom: 12px;
+}
+
+/* SEÇÕES */
+.secao {
+    padding: 55px 0;
+}
+
+.secao h2 {
+    color: #a90032;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.subtitulo {
+    text-align: center;
+    color: #765b5b;
+    margin-bottom: 35px;
+}
+
+.etiqueta {
+    display: block;
+    text-align: center;
+    color: #c13b60;
+    font-size: 13px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+/* PERSONAGENS */
+.grade-personagens {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.cartao {
+    background-color: #fffaf5;
+    padding: 22px;
+    border-radius: 18px;
+    text-align: center;
+    border: 2px solid #f5c4c8;
+    box-shadow: 0 5px 15px rgba(100, 30, 40, 0.08);
+    transition: transform 0.3s;
+}
+
+.cartao:hover {
+    transform: translateY(-6px);
+}
+
+.cartao img {
+    width: 100%;
+    height: 240px;
+    object-fit: contain;
+    margin-bottom: 12px;
+}
+
+.cartao h3 {
+    color: #b2224b;
+    margin-bottom: 10px;
+}
+
+/* LINHA DO TEMPO */
+.historia {
+    background-color: #fff8f2;
+    padding: 55px 35px;
+    border-radius: 22px;
+    margin: 35px 0;
+    border: 1px solid #f2c5c5;
+}
+
+.linha-do-tempo {
+    position: relative;
+    max-width: 850px;
+    margin: 45px auto 10px;
+}
+
+/* Linha vertical */
+.linha-do-tempo::before {
+    content: "";
+    position: absolute;
+    left: 25px;
+    top: 10px;
+    bottom: 10px;
+    width: 4px;
+    background-color: #e8a0ad;
+    border-radius: 5px;
+}
+
+.evento {
+    position: relative;
+    padding-left: 75px;
+    margin-bottom: 35px;
+}
+
+.numero {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 54px;
+    height: 54px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #b2224b;
+    color: white;
+    border: 4px solid #fff8f2;
+    border-radius: 50%;
+    font-weight: bold;
+    font-size: 18px;
+    z-index: 1;
+}
+
+.evento-conteudo {
+    background-color: white;
+    padding: 23px;
+    border-radius: 15px;
+    border: 1px solid #f0c3c8;
+    box-shadow: 0 4px 12px rgba(100, 30, 40, 0.06);
+}
+
+.periodo {
+    color: #c13b60;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1.3px;
+}
+
+.evento-conteudo h3 {
+    color: #a90032;
+    font-size: 21px;
+    margin: 7px 0 12px;
+}
+
+.evento-conteudo p {
+    margin-bottom: 12px;
+}
+
+.evento-conteudo p:last-child {
+    margin-bottom: 0;
+}
+
+.evento-final .numero {
+    background-color: #e1a02d;
+}
+
+.evento-final .evento-conteudo {
+    border: 2px solid #e1b85d;
+    background-color: #fffdf3;
+}
+
+/* RELACIONAMENTO */
+.relacionamento {
+    max-width: 850px;
+    margin: 20px auto 50px;
+    padding: 40px;
+    background-color: #ffe5e8;
+    border-radius: 20px;
+    border: 2px solid #f2b2bd;
+    text-align: center;
+}
+
+.relacionamento p {
+    margin: 15px 0;
+}
+
+.frase {
+    color: #a90032;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 18px;
+    margin-top: 25px !important;
+}
+
+/* RODAPÉ */
+footer {
+    background-color: #a90032;
+    color: white;
+    text-align: center;
+    padding: 25px 15px;
+    border-top: 5px solid #f5a2ad;
+}
+
+footer p {
+    margin: 5px;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 750px) {
+    .grade-personagens {
+        grid-template-columns: 1fr;
+    }
+
+    .cartao img {
+        height: 220px;
+    }
+
+    .cabecalho h1 {
+        font-size: 32px;
+    }
+
+    .historia {
+        padding: 40px 15px;
+    }
+
+    .evento {
+        padding-left: 65px;
+    }
+
+    .evento-conteudo {
+        padding: 17px;
+    }
+
+    .evento-conteudo h3 {
+        font-size: 18px;
+    }
+
+    .relacionamento {
+        padding: 25px 18px;
+    }
+}
+
+@media (max-width: 420px) {
+    nav {
+        gap: 8px;
+    }
+
+    nav a {
+        font-size: 13px;
+        padding: 7px 11px;
+    }
+
+    .linha-do-tempo::before {
+        left: 20px;
+    }
+
+    .evento {
+        padding-left: 55px;
+    }
+
+    .numero {
+        width: 44px;
+        height: 44px;
+        font-size: 15px;
+    }
+}
